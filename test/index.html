@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>DeadDrop: simpler drag-and-drop</title>
+    <style>
+        form { display: block; }
+        .deaddrop {
+            border: 1px solid #333;
+            height: 200px;
+            margin: 25px auto;
+            width: 200px;
+        }
+    </style>
+<body>
+    <form id="form-deaddrop" method="post" action="#">
+        <div class="deaddrop"></div>
+    </form>
+    <script src="../deaddrop.js"></script>
+    <script>
+        var dd = new DeadDrop('#form-deaddrop');
+    </script>
+</body>
+</html>
